@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+        <title>Contact Phōtizō</title>
+        
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="contact-header">
+            <h1>BRING YOUR VISION TO LIFE</h1>
+            <p>Let's build something amazing together</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Success Message (hidden by default) -->
+            <div id="form-success" class="form-success">
+                <h2>🚀 Message Sent!</h2>
+                <p>We'll get back to you within an hour.</p>
+            </div>
+
+            <!-- Updated Form with Formspree -->
+            <form id="contact-form" class="contact-form" 
+                  action="https://formspree.io/f/mnnzjpny" 
+                  method="POST">
+                
+                <input type="text" name="name" placeholder="Your Name" required minlength="2">
+                
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                
+                <input type="text" name="project_type" placeholder="Project Type (Web/Mobile/Design)">
+                
+                <textarea name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+                
+                <!-- Formspree Hidden Field (optional) -->
+                <input type="hidden" name="_subject" value="New Contact from Photizo Site">
+                
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="contact-methods">
+            <div class="contact-method">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>phōtizō@dev.com</p>
+            </div>
+            <div class="contact-method">
+                <div class="contact-icon">📱</div>
+                <h3>Phone</h3>
+                <p>+27 67 316 3432</p>
+            </div>
+            <div class="contact-method">
+                <div class="contact-icon">🏢</div>
+                <h3>Office</h3>
+                <p>21 Rockridge Rd</p>
+                <br>
+                <p>Parktown, Johannesburg, 2193</p>
+            </div>
+        </div>
+
+        <div id="myLink">
+            <p>© 2023 Phōtizō. All rights reserved.</p>
+        </div>
+
+        <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+        </script>
+
+        <script>
+            // 1. Get form and submit button references
+                const contactForm = document.getElementById('contact-form');
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const successMsg = document.getElementById('form-success');
+
+            // 2. Add submit event listener
+                contactForm.addEventListener('submit', async function(e) {
+            // 3. Prevent default form submission
+                    e.preventDefault();
+    
+            // 4. Store original button text
+                    const originalBtnText = submitBtn.innerHTML;
+    
+            // 5. Show loading state
+                    submitBtn.innerHTML = `
+                        <svg class="spinner" viewBox="0 0 50 50">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                        </svg> Sending...
+                    `;
+                    submitBtn.disabled = true;
+
+                    try {
+                    // 6. Send data to Formspree
+                        const response = await fetch(contactForm.action, {
+                            method: 'POST',
+                            body: new FormData(contactForm),
+                            headers: { 
+                                    'Accept': 'application/json'
+                            }
+                        });
+
+                    // 7. Check if response is successful
+                        if (response.ok) {
+
+                            // 8. Show success message
+
+                            successMsg.style.display = 'block';
+                            contactForm.style.display = 'none';
+            
+                    // 9. Reset form (hidden but still accessible)
+                            contactForm.reset();
+
+                            // NEW: Auto-close after 5 seconds
+                            setTimeout(() => {
+                                successMsg.style.display = 'none';
+                                contactForm.style.display = 'block';
+                            }, 5000); // 5000 milliseconds = 5 seconds
+                            
+                        } else {
+                           
+                    // 10. Handle server errors (e.g., Formspree rate limiting)
+                            throw new Error('Form submission failed');
+                        }
+
+                    } catch (error) {
+
+                    // 11. Show error message in console and to user
+
+                    console.error('Submission error:', error);
+                    submitBtn.innerHTML = '⚠️ Failed - Try Again';
+        
+                    // 12. Re-enable button after 3 seconds
+
+                    setTimeout(() => {
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    }, 3000);
+
+                    } finally {
+                    // 13. Always re-enable button if not in error state
+                            if (!submitBtn.innerHTML.includes('Failed')) {
+                                submitBtn.innerHTML = originalBtnText;
+                                submitBtn.disabled = false;
+                            }
+                        }
+                    });
+        </script>
+    </body>
+</html>

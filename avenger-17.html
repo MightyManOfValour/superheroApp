@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #9e0f15; text-shadow: 3px 3px 5px rgba(255,215,0,0.5);">Scarlet Witch</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_17.jpg" alt="Scarlet Witch">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> Wanda Maximoff</p>
+            <p><b>Origin:</b> Sokovia</p>
+            <p><b>Alignment:</b> Neutral/Good</p>
+            <p><b>Gender:</b> Female</p>
+            <p><b>Race:</b> Human (Mutant)</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Enhanced by Chaos Magic</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="85%" style="background: linear-gradient(to right, #9e0f15, #ff4757);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Telekinetic Enhancement</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="75%" style="background: linear-gradient(to right, #9e0f15, #ff4757);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Reality Warping</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="90%" style="background: linear-gradient(to right, #9e0f15, #ff4757);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Probability Manipulation</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="95%" style="background: linear-gradient(to right, #9e0f15, #ff4757);"></div>
+            </div>
+            
+            <p><b>Power:</b> Chaos Magic Unlimited</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="100%" style="background: linear-gradient(to right, #9e0f15, #ff4757);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Hex Magic & Energy Blasts</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="95%" style="background: linear-gradient(to right, #9e0f15, #ff4757);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html>

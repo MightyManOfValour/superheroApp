@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #795548; text-shadow: 3px 3px 5px rgba(0,0,0,0.3);">Rocket Raccoon</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_19.jpg" alt="Rocket Raccoon">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> 89P13</p>
+            <p><b>Origin:</b> Halfworld</p>
+            <p><b>Alignment:</b> Neutral Good</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Race:</b> Augmented Raccoon</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Mechanical Genius</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="95%" style="background: linear-gradient(to right, #795548, #a98274);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Enhanced Rodent Physiology</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="40%" style="background: linear-gradient(to right, #795548, #a98274);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Small Target Agility</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="80%" style="background: linear-gradient(to right, #795548, #a98274);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Cybernetic Enhancements</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="60%" style="background: linear-gradient(to right, #795548, #a98274);"></div>
+            </div>
+            
+            <p><b>Power:</b> Weapons Arsenal</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="90%" style="background: linear-gradient(to right, #795548, #a98274);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Tactical Genius</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="85%" style="background: linear-gradient(to right, #795548, #a98274);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+h1{
+    color: #800000;
+    font-family: sans-serif;
+}
+p{
+    color:#070102;
+    font-family: 'Times New Roman';
+}
+ul{
+    color:blueviolet;
+      list-style-image: url('images/pointer-icon.png');
+}
+ol{
+    list-style-type: lower-roman;
+}
+#menu-bar a{
+    text-decoration: none;
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+#menu-bar a:hover{
+    background-color: aqua;
+    color: #ffffff;
+}
+#song a:hover{
+    color: hsl(345, 93%, 46%);
+}
+
+

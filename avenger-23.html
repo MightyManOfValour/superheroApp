@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #1a6b54; text-shadow: 3px 3px 5px rgba(255,215,0,0.7);">Doctor Strange</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_23.jpg" alt="Doctor Strange">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> Stephen Vincent Strange</p>
+            <p><b>Origin:</b> Earth (Philadelphia, Pennsylvania)</p>
+            <p><b>Alignment:</b> Good</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Race:</b> Human (Sorcerer)</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Super-Genius (Medical/Mystical)</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="100%" style="background: linear-gradient(to right, #1a6b54, #00b388);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Normal Human (Magically Enhanced)</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="40%" style="background: linear-gradient(to right, #1a6b54, #00b388);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Astral Projection</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="70%" style="background: linear-gradient(to right, #1a6b54, #00b388);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Mystical Shields</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="85%" style="background: linear-gradient(to right, #1a6b54, #00b388);"></div>
+            </div>
+            
+            <p><b>Power:</b> Master of Mystic Arts</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="100%" style="background: linear-gradient(to right, #1a6b54, #00b388);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Dimensional Warfare</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="90%" style="background: linear-gradient(to right, #1a6b54, #00b388);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html>

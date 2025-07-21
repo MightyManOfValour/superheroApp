@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #e62429; text-shadow: 3px 3px 5px rgba(0,0,0,0.5);">Iron Man</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_02.jpg" alt="Iron Man">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> Anthony Edward "Tony" Stark</p>
+            <p><b>Origin:</b> Earth (Long Island, New York)</p>
+            <p><b>Alignment:</b> Good</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Race:</b> Human (Enhanced)</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Super-Genius (6th smartest in Marvel Universe)</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="100%" style="background: linear-gradient(to right, #e62429, #ff6b6b);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Class 50+ in armor (50-100 tons)</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="85%" style="background: linear-gradient(to right, #e62429, #ff6b6b);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Supersonic flight (Mach 2-3 in armor)</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="80%" style="background: linear-gradient(to right, #e62429, #ff6b6b);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Extremis-enhanced, armor withstands nukes</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="90%" style="background: linear-gradient(to right, #e62429, #ff6b6b);"></div>
+            </div>
+            
+            <p><b>Power:</b> Arc reactor, repulsor tech, weapon systems</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="95%" style="background: linear-gradient(to right, #e62429, #ff6b6b);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Advanced AI-assisted tactical analysis</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="85%" style="background: linear-gradient(to right, #e62429, #ff6b6b);"></div>
+            </div>
+            
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+           <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+            </script>
+    </body>
+</html>

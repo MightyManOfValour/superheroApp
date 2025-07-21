@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #7b1fa2; text-shadow: 3px 3px 5px rgba(255,255,255,0.3);">Mantis</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_21.jpg" alt="Mantis">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> Brandt</p>
+            <p><b>Origin:</b> Vietnam/Celestial Madonna</p>
+            <p><b>Alignment:</b> Lawful Good</p>
+            <p><b>Gender:</b> Female</p>
+            <p><b>Race:</b> Human/Celestial Hybrid</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Cosmic Awareness</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="85%" style="background: linear-gradient(to right, #7b1fa2, #ba68c8);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Peak Human Potential</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="65%" style="background: linear-gradient(to right, #7b1fa2, #ba68c8);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Enhanced Reflexes</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="75%" style="background: linear-gradient(to right, #7b1fa2, #ba68c8);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Empathic Shield</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="70%" style="background: linear-gradient(to right, #7b1fa2, #ba68c8);"></div>
+            </div>
+            
+            <p><b>Power:</b> Empathic Manipulation</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="100%" style="background: linear-gradient(to right, #7b1fa2, #ba68c8);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Celestial Martial Arts</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="90%" style="background: linear-gradient(to right, #7b1fa2, #ba68c8);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html>

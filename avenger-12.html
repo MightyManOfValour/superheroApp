@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #4d8fc4; text-shadow: 3px 3px 5px rgba(255,255,255,0.3);">Vision</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_12.jpg" alt="Vision">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> The Vision</p>
+            <p><b>Origin:</b> Created by Ultron</p>
+            <p><b>Alignment:</b> Good</p>
+            <p><b>Gender:</b> Male (Android)</p>
+            <p><b>Race:</b> Synthezoid</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Supercomputer-Level AI</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="95%" style="background: linear-gradient(to right, #4d8fc4, #a5d8ff);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Class 75 (75+ tons)</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="90%" style="background: linear-gradient(to right, #4d8fc4, #a5d8ff);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Supersonic Flight</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="85%" style="background: linear-gradient(to right, #4d8fc4, #a5d8ff);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Vibranium-Enhanced Body</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="95%" style="background: linear-gradient(to right, #4d8fc4, #a5d8ff);"></div>
+            </div>
+            
+            <p><b>Power:</b> Solar Jewel & Density Control</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="100%" style="background: linear-gradient(to right, #4d8fc4, #a5d8ff);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Tactical Analysis Processor</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="90%" style="background: linear-gradient(to right, #4d8fc4, #a5d8ff);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html>

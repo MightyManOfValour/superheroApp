@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #d1345b; text-shadow: 3px 3px 5px rgba(0,0,0,0.5);">Black Widow</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_06.jpg" alt="Black Widow">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> Natalia Alianovna Romanova</p>
+            <p><b>Origin:</b> Earth (Stalingrad, Russia)</p>
+            <p><b>Alignment:</b> Good</p>
+            <p><b>Gender:</b> Female</p>
+            <p><b>Race:</b> Human (Enhanced)</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> Master Spy & Tactician</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="90%" style="background: linear-gradient(to right, #d1345b, #ff7b9c);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Peak Human Conditioning</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="60%" style="background: linear-gradient(to right, #d1345b, #ff7b9c);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Olympic-Level Athlete</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="75%" style="background: linear-gradient(to right, #d1345b, #ff7b9c);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Enhanced Immune System</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="70%" style="background: linear-gradient(to right, #d1345b, #ff7b9c);"></div>
+            </div>
+            
+            <p><b>Power:</b> Advanced Weaponry & Tech</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="75%" style="background: linear-gradient(to right, #d1345b, #ff7b9c);"></div>
+            </div>
+            
+            <p><b>Combat:</b> World's Best Assassin</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="95%" style="background: linear-gradient(to right, #d1345b, #ff7b9c);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html>

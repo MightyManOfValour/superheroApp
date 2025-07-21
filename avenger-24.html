@@ -1,0 +1,79 @@
+<!-- SHURI TEMPLATE -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+
+        <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+                
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <h2 style="color: #000; text-shadow: 3px 3px 5px rgba(255,215,0,0.7);">Shuri</h2>
+
+        <div class="gallery8">
+            <img src="images/avengers_24.jpg" alt="Shuri">
+        </div>
+
+        <div class="stats-container">
+            <h3>Bio</h3>
+            <p><b>Full Name:</b> Shuri</p>
+            <p><b>Origin:</b> Wakanda</p>
+            <p><b>Alignment:</b> Good</p>
+            <p><b>Gender:</b> Female</p>
+            <p><b>Race:</b> Human</p>
+            
+            <h3>Power Stats</h3>
+
+            <p><b>Intelligence:</b> 8th Smartest in Marvel Universe</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="intelligence" data-percent="100%" style="background: linear-gradient(to right, #000, #555);"></div>
+            </div>
+            
+            <p><b>Strength:</b> Panther Habit Enhanced</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="strength" data-percent="75%" style="background: linear-gradient(to right, #000, #555);"></div>
+            </div>
+            
+            <p><b>Speed:</b> Vibranium Tech Boost</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="speed" data-percent="80%" style="background: linear-gradient(to right, #000, #555);"></div>
+            </div>
+            
+            <p><b>Durability:</b> Energy-Dispersing Suit</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="durability" data-percent="85%" style="background: linear-gradient(to right, #000, #555);"></div>
+            </div>
+            
+            <p><b>Power:</b> Wakandan Tech Mastery</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="power" data-percent="95%" style="background: linear-gradient(to right, #000, #555);"></div>
+            </div>
+            
+            <p><b>Combat:</b> Royal Martial Training</p>
+            <div class="stat-bar">
+                <div class="stat-fill" id="combat" data-percent="85%" style="background: linear-gradient(to right, #000, #555);"></div>
+            </div>
+        </div>
+        <div id="myLink">
+            <p>© 2025, Phōtizō. All rights reserved.</p>
+        </div>
+
+                <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+                </script>
+    </body>
+</html> 

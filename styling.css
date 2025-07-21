@@ -1,0 +1,470 @@
+
+h2 {
+    color: #f8d053; /* Thor's hammer gold */
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    margin: 20px 0;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(123,0,0,0.7));
+    border-radius: 10px;
+}
+
+.spinner {
+    animation: rotate 1s linear infinite;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.spinner circle {
+    stroke: white;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate { 100% { transform: rotate(360deg); } }
+@keyframes dash {
+    0% { stroke-dasharray: 1,150; stroke-dashoffset: 0; }
+    50% { stroke-dasharray: 90,150; stroke-dashoffset: -35; }
+    100% { stroke-dasharray: 90,150; stroke-dashoffset: -124; }
+}
+
+.form-success {
+    display: none;
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* Additional styles for about page */
+
+.team-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+
+.team-section li {
+    padding: 10px 15px;
+    margin: 8px 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.team-section li:hover {
+    transform: translateX(5px);
+    background: rgba(230, 36, 41, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-header {
+    background: linear-gradient(135deg, #e62429 0%, #000 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.phōtizō-logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.mission-section, .services-section, .team-section{
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #e62429;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #e62429;
+    margin-bottom: 15px;
+}
+
+
+/* Additional styles for contact page */
+
+.contact-header {
+    background: linear-gradient(135deg, #000 0%, #e62429 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+}
+
+.contact-form button {
+    background: #e62429;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ba1818;
+    transform: scale(1.05);
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.contact-method {
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #e62429;
+}
+
+
+h3 {
+    color: #e62429; /* Avengers red */
+    font-size: 2rem;
+    border-bottom: 2px solid #f8d053;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.gallery8 {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.gallery8 img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(248, 208, 83, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery8 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    border-color: #ba1818;
+}
+
+/* Bio and Power Stats Styling */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: azure;
+}
+
+b {
+    color: #f8d053;
+    font-weight: normal;
+}
+
+/* Power Stats Bars */
+.stats-container {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding-bottom: 60px !important;
+    border: 2px solid #f8d053;
+}
+
+.stat-bar {
+    height: 25px;
+    background: #333;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.stat-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #e62429, #f8d053);
+    position: relative;
+}
+
+.stat-fill::after {
+    content: attr(data-percent);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+[data-percent="100%"] {
+    width: 100%;
+}
+
+[data-percent="95%"] {
+    width: 95%;
+}
+
+[data-percent="90%"] {
+    width: 90%;
+}
+
+[data-percent="85%"] {
+    width: 85%;
+}
+
+[data-percent="80%"] {
+    width: 80%;
+}
+
+[data-percent="75%"] {
+    width: 75%;
+}
+
+[data-percent="70%"] {
+    width: 70%;
+}
+
+[data-percent="65%"] {
+    width: 65%;
+}
+
+[data-percent="60%"] {
+    width: 60%;
+}
+
+[data-percent="55%"] {
+    width: 55%;
+}
+
+[data-percent="50%"] {
+    width: 50%;
+}
+
+[data-percent="45%"] {
+    width: 45%;
+}
+
+[data-percent="40%"] {
+    width: 40%;
+}
+
+
+
+
+/* Reset default margins and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full page background */
+body {
+    background: url('images/7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Header styling - logo at the top */
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header img {
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s; /* Optional hover effect */
+}
+
+.header img:hover {
+    transform: scale(1.05); /* Subtle Avengers "power-up" effect */
+}
+
+/* Main content area - 70% width centered */
+#main {
+    width: 70%;
+    margin: 30px auto 100px; /* top | horizontal | bottom */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* Gallery grid layout - 3 columns */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    border-color: #ba1818;
+}
+
+/* Navigation bar */
+#myLinks {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #ba1818;
+}
+
+#myLinks a {
+    color: rgb(255, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    flex: 1;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#myLinks a:hover {
+    color: white;
+    background-color: #ba1818cf;
+}
+
+/* Footer styling */
+#myLink {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 70px; /* sits right above the nav */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ba1818;
+}
+
+#myLink p {
+    color: rgb(255, 5, 5);
+    font-weight: 700;
+    margin: 0;
+}
+
+.loader-wrapper {
+    position: fixed; /* Stays in place even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    z-index: 9999; /* Appears above everything */
+    transition: opacity 0.5s; /* Fade-out animation */
+}
+
+.loader {
+    border: 5px solid #333; /* Gray border (unfilled part) */
+    border-top: 5px solid #ba1818; /* Red border (animated part) */
+    border-radius: 50%; /* Makes it circular */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Rotation animation */
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Start position */
+    100% { transform: rotate(360deg); } /* Full rotation */
+}
+
+
+
+@media (max-width: 768px) {
+    /* Tablet styles */
+    #main {
+        width: 90%;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    /* Mobile styles */
+@media (max-width: 480px) {
+    .gallery {
+    grid-template-columns: 1fr;
+}
+    
+.header img {
+    max-width: 250px;
+}
+}
+
+
+
+/* if javaScript get disabled*/
+
+.no-js .loader-wrapper { display: none; 
+}
+
+
+
+

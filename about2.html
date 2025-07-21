@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+        <title>About Phōtizō</title>
+
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+
+        <div id="myLinks">
+            <a href="superhero.html">Home</a>
+            <a href="about2.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="about-header">
+            <img src="images/photizo_logo.png" alt="Phōtizō Logo" class="phōtizō-logo">
+            <h1>IGNITING DIGITAL EXPERIENCES</h1>
+            <p>Where innovation meets execution</p>
+        </div>
+
+        <div class="mission-section">
+            <h2>OUR MISSION</h2>
+            <p>At Phōtizō (Greek for "to illuminate"), we light up the digital world with cutting-edge web and mobile applications. Founded in 2020, we specialize in creating immersive experiences like this superhero showcase app.</p>
+        </div>
+
+        <div class="services-section">
+            <h2>OUR SERVICES</h2>
+            
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Custom Web Development</h3>
+                <p>From responsive designs like this Avengers site to complex web applications with React, Angular, or Vue.js.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Mobile App Development</h3>
+                <p>iOS and Android apps built with Flutter or native technologies, featuring the same engaging UI as this superhero app.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Crafting visually stunning interfaces with the same attention to detail seen in this character template system.</p>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>OUR TECH STACK</h2>
+            <p>We built this showcase using:</p>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Backend:</strong> JavaScript, Pyhton</li>
+            </ul>
+        </div>
+
+        <div id="myLink">
+            <p>© 2023 Phōtizō. All rights reserved.</p>
+        </div>
+
+        <script>
+                    window.addEventListener("load", function() {
+                        document.querySelector('.loader-wrapper').style.opacity = '0';
+                        setTimeout(function() {
+                             document.querySelector('.loader-wrapper').style.display = 'none';
+                        }, 500);
+                    });
+        </script>
+    </body>
+</html>
