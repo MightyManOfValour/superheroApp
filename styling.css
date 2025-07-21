@@ -438,7 +438,7 @@ body {
 
 /* Logo styling (transparent background) */
 .ph-logo {
-    max-width: 200px; /* Slightly smaller for elegance */
+    max-width: 300px; /* Slightly smaller for elegance */
     height: auto;
     margin: 0 auto 20px;
     filter: drop-shadow(0 0 10px rgba(248, 208, 83, 0.3)); /* Subtle gold glow */
